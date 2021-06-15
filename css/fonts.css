@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "AStamperBold";
+	src: url("../fonts/AStamperBold/AStamperBold.eot");
+	src: url("../fonts/AStamperBold/AStamperBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/AStamperBold/AStamperBold.woff") format("woff"),
+	url("../fonts/AStamperBold/AStamperBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

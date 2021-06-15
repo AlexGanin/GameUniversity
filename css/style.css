@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    -moz-user-select: none; /* Mozilla Firefox */
+    -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+    -o-user-select: none; /* Opera Presto (не поддерживается) */
+    -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+}
+
+button {
+    border: none;
+}
+
+#way {
+    position: absolute;
+    left: 78px;
+    top: 21px;
+    background: url(../img/way.png) no-repeat;
+    width: 896px;
+    height: 521px;
+    z-index: 50;
+}
+
+.way-finish {
+    z-index: 1000;
+}
+
+#text-start {
+    font-family: AStamperBold;
+    position: absolute;
+    top: 520px;
+    left: 435px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #c60802;
+    line-height: 11px;
+    text-align: center;
+    transform: skew(56deg,-29deg);
+    text-transform: uppercase;
+}
+
+
+#text-finish {
+    font-family: AStamperBold;
+    position: absolute;
+    top: 173px;
+    left: 876px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #036191;
+    line-height: 11px;
+    text-align: center;
+    transform: skew(56deg,-29deg);
+    text-transform: uppercase;
+}
+
+#game {
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+    height: 630px;
+    background: linear-gradient(180deg, rgba(20,149,132,1) 0%, rgba(0,107,95,1) 100%);
+}
+
+#map-stair {
+    background: url(../img/map-stair.png) no-repeat;
+    width: 60px;
+    height: 49px;
+    position: absolute;
+    top: 459px;
+    left: 378px;
+}
+
+#map-flower {
+    background: url(../img/map-flower.png) no-repeat;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 475px;
+    left: 355px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+#main-img {
+    width: 980px;
+    height: 630px;
+    background: url(../img/main.png) no-repeat;
+    position: relative;
+}
+
+#person {
+    position: absolute;
+    top: 430px;
+    left: 433px;
+    background: url(../img/person.png) no-repeat;
+    width: 21px;
+    height: 69px;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    z-index: 105;
+}
+
+#menu {
+    position: absolute;
+    left: 4px;
+    top: 549px;
+    display: flex;
+    align-items: center;
+}
+
+#menu > div {
+    margin: 0 2px;
+}
+
+#menu #block-friends {
+    width: 536px;
+    height: 63px;
+}
+
+#menu #block-friends {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: 536px;
+    height: 63px;
+    background: url(../img/btn-long.png) no-repeat;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#menu #block-friends .arrow {
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 100%;
+    opacity: 0.9;
+}
+
+#menu #block-friends .arrow:hover {
+    opacity: 1;
+}
+
+#menu #block-friends #arrow-left {
+    left: 0;
+    background: url(../img/btn-l-arrow.png) no-repeat 8px center;
+}
+
+#menu #block-friends #arrow-right {
+    right: 0;
+    background: url(../img/btn-r-arrow.png) no-repeat 3px center;
+}
+
+#menu #block-friends #friends {
+    display: flex;
+    align-items: center;
+
+    width: 480px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#menu #block-friends .item {
+    position: relative;
+    width: 50px;
+    height: 51px;
+    margin: 0 5px;
+    background: url(../img/btn-sub-long.png) no-repeat center;
+}
+
+#menu #block-friends .item.iuser:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#menu #block-friends .item .plus:hover {
+    transform: scale(1.05);
+}
+
+#menu #block-friends .item.iuser {
+    cursor: pointer;
+}
+
+#menu #block-friends .item.iuser .user {
+    display: block;
+}
+
+#menu #block-friends .item.iplus .plus {
+    display: block;
+}
+
+#menu #block-friends .item .user {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/btn-sub-long-user.png) no-repeat center 11px;
+}
+
+#menu #block-friends .item .plus {
+    display: none;
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    top: -3px;
+    right: -3px;
+    background: url(../img/btn-sub-long-plus.png) no-repeat center;
+}
+
+#menu #btn-chat {
+    width: 65px;
+    height: 60px;
+    background: url(../img/btn-chat.png) no-repeat center;
+}
+
+#menu #btn-chat:hover {
+    background: url(../img/btn-chat-active.png) no-repeat center;
+}
+
+#btn-big {
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: #fcfaf9;
+    width: 202px;
+    height: 63px;
+    background: url(../img/btn-big.png) no-repeat center;
+    text-shadow: 1px 1px 4px black;
+}
+
+#btn-big:hover {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+}
+
+.btn-blue {
+    position: relative;
+    width: 66px;
+    height: 61px;
+    background: url(../img/btn-bg.png) no-repeat center;
+}
+
+.btn-blue > div {
+    transition: 0.3s;
+}
+
+#btn-letter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/icon-letter.png) no-repeat center;
+}
+
+#btn-places {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/icon-places.png) no-repeat center;
+}
+
+.btn-blue:hover > div {
+    transform: scale(1.1);
+}
